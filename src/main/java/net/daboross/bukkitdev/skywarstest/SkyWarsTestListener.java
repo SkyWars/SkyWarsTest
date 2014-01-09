@@ -25,6 +25,7 @@ import net.daboross.bukkitdev.skywars.api.events.LeaveGameEvent;
 import net.daboross.bukkitdev.skywars.api.events.PlayerEnterQueueEvent;
 import net.daboross.bukkitdev.skywars.api.events.PlayerLeaveQueueEvent;
 import net.daboross.bukkitdev.skywars.api.events.RespawnAfterLeaveGameEvent;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 public class SkyWarsTestListener implements Listener {
@@ -35,34 +36,42 @@ public class SkyWarsTestListener implements Listener {
         this.plugin = plugin;
     }
 
+    @EventHandler
     public void onArenaPlayerDeath(ArenaPlayerDeathEvent evt) {
         plugin.getLogger().log(Level.INFO, "ArenaPlayerDeath event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onArenaPlayerKillPlayer(ArenaPlayerKillPlayerEvent evt) {
         plugin.getLogger().log(Level.INFO, "ArenaPlayerKillPlayer event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onGameEnd(GameEndEvent evt) {
         plugin.getLogger().log(Level.INFO, "GameEnd event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onGameStart(GameStartEvent evt) {
         plugin.getLogger().log(Level.INFO, "GameStart event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onLeaveGame(LeaveGameEvent evt) {
         plugin.getLogger().log(Level.INFO, "LeaveGame event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onPlayerEnterQueue(PlayerEnterQueueEvent evt) {
         plugin.getLogger().log(Level.INFO, "PlayerEnterQueue event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onPlayerLeaveQueue(PlayerLeaveQueueEvent evt) {
         plugin.getLogger().log(Level.INFO, "PlayerLeaveQueue event called. ({0})", evt);
     }
 
+    @EventHandler
     public void onRespawnAfterLeaveGame(RespawnAfterLeaveGameEvent evt) {
         plugin.getLogger().log(Level.INFO, "RespawnAfterLeaveGame event called. ({0})", evt);
     }
