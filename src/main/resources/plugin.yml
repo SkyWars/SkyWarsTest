@@ -1,0 +1,5 @@
+name: ${project.name}
+main: net.daboross.bukkitdev.skywarstest.SkyWarsTestPlugin
+version: ${project.version}
+author: Dabo Ross
+description: ${project.description}
