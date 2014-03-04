@@ -50,7 +50,7 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
-        <build.number>unknown</build.number>
+        <describe>unknown-revision</describe>
         <netbeans.hint.license>gpl30</netbeans.hint.license>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
